@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite</title>
-    <!-- Einbinden der CSS-Datei -->
+    <title>Installation Doku-Seite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Willkommen auf meiner Webseite!</h1>
-    </header>
+    <div class="container">
+        <!-- Sidebar mit Inhaltsverzeichnis -->
+        <nav class="sidebar">
+            <h3>Inhaltsverzeichnis</h3>
+            <ul>
+                <li><a href="#anforderungen">Anforderungen</a></li>
+                <li><a href="#scaffold">Project Website</a></li>
+                <li><a href="#meta-only">Meta-Only</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <section>
-            <h2>Über mich</h2>
-            <p>Hier kannst du einen Text über dich schreiben oder deine Idee präsentieren.</p>
-        </section>
+        <!-- Hauptinhalt -->
+        <div class="content">
+            <header>
+                <h1>Dashy Documentation</h1>
+                <p>Dashy consists of a set of npm packages.</p>
+            </header>
 
-        <section>
-            <h2>Weitere Infos</h2>
-            <p>Füge hier weitere Informationen hinzu!</p>
-        </section>
-    </main>
+            <main>
+                <section class="tip-box">
+                    <p>💡 <strong>Tipp:</strong> Use the Fast Track to understand our dashboard in 5 minutes!</p>
+                </section>
 
-    <footer>
-        <p>&copy; 2025 Deine Webseite. Alle Rechte vorbehalten.</p>
-    </footer>
+                <section id="anforderungen" class="requirements">
+                    <h2>Anforderungen</h2>
+                    <ul>
+                        <li>Node.js Version 18.0 oder höher (prüfen mit <code>node -v</code>).</li>
+                        <li>Für die Verwaltung mehrerer Node-Versionen: <a href="#">nvm</a> verwenden.</li>
+                    </ul>
+                </section>
 
-    <!-- Optional: Einbinden der JavaScript-Datei -->
-    <script src="script.js"></script>
+                <section id="scaffold" class="scaffold">
+                    <h2>Project Website</h2>
+                    <p>Der einfachste Weg, das ARMM5-Dashboard zu installieren, ist die Verwendung des <code>create-dashy</code>-Befehls:</p>
+                    <pre><code>npx create-dashy@latest my-website classic</code></pre>
+                    <p>Sie können auch TypeScript verwenden, indem Sie den <code>--typescript</code>-Schalter hinzufügen:</p>
+                    <pre><code>npx create-dashy@latest my-website classic --typescript</code></pre>
+                </section>
+
+                <section id="meta-only" class="meta-only">
+                    <h2>Meta-Only</h2>
+                    <p>Wenn Sie ein Dashy-Projekt für eine Meta-Open-Source-Seite einrichten, verwenden Sie diese spezielle Konfiguration.</p>
+                </section>
+            </main>
+
+            <footer>
+                <p>&copy; 2025 Dokumentation</p>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
