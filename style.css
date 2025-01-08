@@ -11,7 +11,7 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #16181d;
+    background-color: #2d2f39; /* Dunkler Sidebar-Hintergrund */
     padding: 20px;
     height: 100vh;
     position: sticky;
@@ -20,9 +20,8 @@ body {
 }
 
 .sidebar h3 {
-    color: #fff;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+    color: #00ffb8;
+    font-size: 1.8rem;
 }
 
 .sidebar ul {
@@ -30,17 +29,57 @@ body {
     padding: 0;
 }
 
-.sidebar li {
+.section-header {
+    cursor: pointer;
     margin-bottom: 10px;
 }
 
-.sidebar a {
-    color: #00d4ff;
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.section-header span:first-child {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.section-title .arrow {
+    font-size: 1.2rem;
+    color: #00ffb8; /* Gleiche Farbe wie das Wort "Navigation" */
+    transition: transform 0.3s ease;
+}
+
+
+.sub-menu {
+    display: none;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.sub-menu.open {
+    display: block;
+}
+
+.sub-menu li {
+    margin-bottom: 10px;
+}
+
+.sub-menu a {
+    color: #00ffb8; /* Gleiche Farbe für die Untermenüpunkte */
     text-decoration: none;
 }
 
-.sidebar a:hover {
+.sub-menu a:hover {
     text-decoration: underline;
+    color: #00ffb8; /* Auch beim Hover dieselbe Farbe */
+}
+
+
+.section-header.open .arrow {
+    transform: rotate(90deg); /* Pfeil dreht sich nach unten bei geöffnetem Menü */
 }
 
 .content {

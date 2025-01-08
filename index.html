@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation Doku-Seite</title>
+    <title>Doku-Seite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <!-- Sidebar mit Inhaltsverzeichnis -->
         <nav class="sidebar">
-            <h3>Inhaltsverzeichnis</h3>
+            <h3>Content</h3>
             <ul>
-                <li><a href="#anforderungen">Anforderungen</a></li>
-                <li><a href="#scaffold">Project Website</a></li>
-                <li><a href="#meta-only">Meta-Only</a></li>
+                <!-- User Section -->
+                <li class="section-header">
+                    <div class="section-title">
+                        <span>User Section</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#anforderungen">Anforderungen</a></li>
+                        <li><a href="#project-website">Project Website</a></li>
+                        <li><a href="#meta-only">Meta-Only</a></li>
+                    </ul>
+                </li>
+
+                <!-- Developer Section -->
+                <li class="section-header">
+                    <div class="section-title">
+                        <span>Developer Section</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#dev-placeholder-1">Development Placeholder 1</a></li>
+                        <li><a href="#dev-placeholder-2">Development Placeholder 2</a></li>
+                        <li><a href="#dev-placeholder-3">Development Placeholder 3</a></li>
+                    </ul>
+                </li>
+
+                <!-- Maintainer Section -->
+                <li class="section-header">
+                    <div class="section-title">
+                        <span>Maintainer Section</span>
+                        <span class="arrow">&gt;</span>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#maint-placeholder-1">Maintainer Placeholder 1</a></li>
+                        <li><a href="#maint-placeholder-2">Maintainer Placeholder 2</a></li>
+                        <li><a href="#maint-placeholder-3">Maintainer Placeholder 3</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -26,10 +61,7 @@
             </header>
 
             <main>
-                <section class="tip-box">
-                    <p>💡 <strong>Tipp:</strong> Use the Fast Track to understand our dashboard in 5 minutes!</p>
-                </section>
-
+                <!-- Anforderungen Section -->
                 <section id="anforderungen" class="requirements">
                     <h2>Anforderungen</h2>
                     <ul>
@@ -38,17 +70,47 @@
                     </ul>
                 </section>
 
-                <section id="scaffold" class="scaffold">
+                <!-- Project Website Section -->
+                <section id="project-website" class="scaffold">
                     <h2>Project Website</h2>
-                    <p>Der einfachste Weg, das ARMM5-Dashboard zu installieren, ist die Verwendung des <code>create-dashy</code>-Befehls:</p>
-                    <pre><code>npx create-dashy@latest my-website classic</code></pre>
+                    <p>Der einfachste Weg, Docusaurus zu installieren, ist die Verwendung des <code>create-docusaurus</code>-Befehls:</p>
+                    <pre><code>npx create-docusaurus@latest my-website classic</code></pre>
                     <p>Sie können auch TypeScript verwenden, indem Sie den <code>--typescript</code>-Schalter hinzufügen:</p>
-                    <pre><code>npx create-dashy@latest my-website classic --typescript</code></pre>
+                    <pre><code>npx create-docusaurus@latest my-website classic --typescript</code></pre>
                 </section>
 
+                <!-- Meta-Only Section -->
                 <section id="meta-only" class="meta-only">
                     <h2>Meta-Only</h2>
-                    <p>Wenn Sie ein Dashy-Projekt für eine Meta-Open-Source-Seite einrichten, verwenden Sie diese spezielle Konfiguration.</p>
+                    <p>Wenn Sie ein Docusaurus-Projekt für eine Meta-Open-Source-Seite einrichten, verwenden Sie diese spezielle Konfiguration.</p>
+                </section>
+
+                <!-- Developer Section Placeholder -->
+                <section id="dev-placeholder-1">
+                    <h2>Development Placeholder 1</h2>
+                    <p>Inhalt für Entwickler-Platzhalter 1.</p>
+                </section>
+                <section id="dev-placeholder-2">
+                    <h2>Development Placeholder 2</h2>
+                    <p>Inhalt für Entwickler-Platzhalter 2.</p>
+                </section>
+                <section id="dev-placeholder-3">
+                    <h2>Development Placeholder 3</h2>
+                    <p>Inhalt für Entwickler-Platzhalter 3.</p>
+                </section>
+
+                <!-- Maintainer Section Placeholder -->
+                <section id="maint-placeholder-1">
+                    <h2>Maintainer Placeholder 1</h2>
+                    <p>Inhalt für Maintainer-Platzhalter 1.</p>
+                </section>
+                <section id="maint-placeholder-2">
+                    <h2>Maintainer Placeholder 2</h2>
+                    <p>Inhalt für Maintainer-Platzhalter 2.</p>
+                </section>
+                <section id="maint-placeholder-3">
+                    <h2>Maintainer Placeholder 3</h2>
+                    <p>Inhalt für Maintainer-Platzhalter 3.</p>
                 </section>
             </main>
 
@@ -57,5 +119,7 @@
             </footer>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
