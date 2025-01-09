@@ -127,6 +127,7 @@ header p {
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 30px;
+    line-height: 25px; 
 }
 
 h2 {
@@ -135,7 +136,9 @@ h2 {
 }
 
 ul {
-    padding-left: 20px;
+    margin-top: 5px; /* Reduziert den Abstand zwischen Einzeiler und Liste */
+    padding-left: 20px; /* Abstand der Punkte vom linken Rand */
+    list-style-type: disc; /* Standardmäßig Aufzählungspunkte */
 }
 
 pre {
@@ -158,4 +161,18 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+.kleine-unterstrichene-ueberschrift {
+    text-decoration: underline;
+    font-size: 16px; /* Schriftgröße des Absatzes */
+    font-family: inherit; /* Gleiche Schriftart wie Absatz */
+    font-weight: normal; /* Nicht fett */
+    line-height: 1.6;
+    margin-bottom: 5px; /* Wenig Abstand unter der Überschrift */
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 5px; /* Wenig Abstand über dem Absatz */
 }

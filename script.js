@@ -6,18 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const subMenu = header.querySelector('.sub-menu');
         const arrow = header.querySelector('.arrow');
 
-        title.addEventListener('click', () => {
+        title.addEventListener('click', (event) => {
+            event.stopPropagation(); // Verhindert das Schließen der äußeren Menüs
             const isOpen = subMenu.classList.contains('open');
 
-            // Schließt alle anderen Menüs
-            document.querySelectorAll('.sub-menu').forEach(menu => menu.classList.remove('open'));
-            document.querySelectorAll('.arrow').forEach(arr => arr.style.transform = 'rotate(0deg)');
-
-            // Öffnet nur das geklickte Menü
-            if (!isOpen) {
-                subMenu.classList.add('open');
-                arrow.style.transform = 'rotate(90deg)';
-            }
+            // Nur das geklickte Untermenü öffnen oder schließen
+            subMenu.classList.toggle('open', !isOpen);
+            arrow.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(90deg)';
         });
     });
 });

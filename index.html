@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleine unterstrichene Überschrift</title>
     <title>Doku-Seite</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,11 +20,44 @@
                         <span class="arrow">&gt;</span>
                     </div>
                     <ul class="sub-menu">
-                        <li><a href="#anforderungen">Anforderungen</a></li>
-                        <li><a href="#project-website">Project Website</a></li>
-                        <li><a href="#meta-only">Meta-Only</a></li>
+                        <!-- Dashboard -->
+                        <li><a href="#dashboard">Dashboard</a></li>
+
+                        <!-- Keycloak -->
+                        <li><a href="#keycloak">Keycloak</a></li>
+
+                        <!-- ProtoGen mit Untermenü -->
+                        <li class="section-header">
+                            <div class="section-title">
+                                <span>ProtoGen</span>
+                                <span class="arrow">&gt;</span>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#zweck-protogen">Zweck</a></li>
+                                <li><a href="#grundlagen-protogen">Grundlagen der Funktionsweise</a></li>
+                                <li><a href="#anleitung-protogen">Anleitung zur Nutzung</a></li>
+                                <li><a href="#speicherung-protogen">Speicherung und Export</a></li>
+                                <li><a href="#datenschutz-protogen">Datenschutz und Sicherheit</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Chatbot mit Untermenü -->
+                        <li class="section-header">
+                            <div class="section-title">
+                                <span>Chatbot</span>
+                                <span class="arrow">&gt;</span>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#zweck-chatbot">Zweck</a></li>
+                                <li><a href="#grundlagen-chatbot">Grundlagen der Funktionsweise</a></li>
+                                <li><a href="#oberflaeche-chatbot">Benutzeroberfläche</a></li>
+                                <li><a href="#anleitung-chatbot">Anleitung zur Nutzung</a></li>
+                                <li><a href="#datenschutz-chatbot">Datenschutz und Sicherheit</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
+
 
                 <!-- Developer Section -->
                 <li class="section-header">
@@ -84,6 +118,34 @@
                 <section id="meta-only" class="meta-only">
                     <h2>Meta-Only</h2>
                     <p>Wenn Sie ein Docusaurus-Projekt für eine Meta-Open-Source-Seite einrichten, verwenden Sie diese spezielle Konfiguration.</p>
+                </section>
+
+                <!-- Meta-Only Section -->
+                <section id="meta-only" class="meta-only">
+                    <h2>ProtoGen</h2>
+                    <p>ProtoGen ist ein Plugin, das es Vereinen erleichtert, Protokolle effizient zu verwalten. Es ermöglicht einen schnellen Überblick über Protokolle, deren einfache Suche durch Filter (z. B. Datum und Ort) sowie die Ansicht und den Export Protokolle als PDF. Der Hauptvorteil liegt in der KI-gestützten Protokollerstellung, die den manuellen Aufwand minimiert.</p>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Grundlegende Funktionalitäten</h2>
+                    <p>ProtoGen arbeitet mit KI-Technologien, um aus Audioaufzeichnungen Protokolle zu erstellen. Zunächst wird die Sprache in Text umgewandelt, Sprecher werden unterschieden, und anschließend generiert die KI einen Protokollvorschlag, der anpassbar ist. </p>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Anleitung zur Nutzung:</h2>
+                    <ul>
+                        <li>Schritt 1: Aufnahme hochladen, die zur Umwandlung in Text gesendet wird. </li>
+                        <li>Schritt 2: Sprecher können optional benannt werden, basierend auf ausgewählten Textstellen.</li>
+                        <li>Schritt 3: Der transkribierte Text kann überprüft, bearbeitet und von irrelevanten Inhalten bereinigt werden.</li>
+                        <li>Schritt 4: Die KI generiert basierend auf der bereinigten Transkription einen Protokollvorschlag, der weiter angepasst werden kann</li>
+                    </ul>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Speicherung und Export</h2>
+                    <ul>
+                        <li>Export des finalen Protokolls als PDF. </li>
+                        <li>Speicherung in der Protokolldatenbank. </li>
+                        <li>Option, das Protokoll direkt in Dropbox zu speichern. </li>
+                    </ul>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Datenschutz und Sicherheit:</h2>
+                    <ul>
+                        <li>Keycloak-SSO schützt Zugänge und gewährleistet, dass nur autorisierte Personen Protokolle einsehen können.</li>
+                        <li> Zugriffsbeschränkung auf Protokolle der eigenen Organisation.</li>
+                    </ul>
+
+
                 </section>
 
                 <!-- Developer Section Placeholder -->
