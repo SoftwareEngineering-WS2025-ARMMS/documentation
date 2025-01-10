@@ -176,3 +176,35 @@ p {
     line-height: 1.6;
     margin-top: 5px; /* Wenig Abstand über dem Absatz */
 }
+
+
+
+.code-container {
+    display: inline-block;  /* Nur so breit wie der Inhalt */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #2d2d2d; /* Dunkler Hintergrund */
+}
+
+pre.custom-code {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre.custom-code code {
+    white-space: pre; /* Zeilenumbrüche erhalten */
+    display: block;
+}
+
+pre.custom-code code span:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);  /* leichte Farbe für gerade Zeilen */
+}
+
+pre.custom-code code span:nth-child(odd) {
+    background-color: transparent;  /* keine Farbe für ungerade Zeilen */
+}
+

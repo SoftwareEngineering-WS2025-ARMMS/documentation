@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kleine unterstrichene Überschrift</title>
     <title>Doku-Seite</title>
+    <title>Beispiel mit Link</title>
+    <title>JSON Code-Beispiel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -66,9 +68,12 @@
                         <span class="arrow">&gt;</span>
                     </div>
                     <ul class="sub-menu">
-                        <li><a href="#dev-placeholder-1">Development Placeholder 1</a></li>
-                        <li><a href="#dev-placeholder-2">Development Placeholder 2</a></li>
-                        <li><a href="#dev-placeholder-3">Development Placeholder 3</a></li>
+                        <li><a href="#dev-placeholder-1">Storage Engine</a></li>
+                        <li><a href="#dev-placeholder-2">Keycloak</a></li>
+                        <li><a href="#dev-placeholder-3">ProtoGen</a></li>
+                        <li><a href="#dev-placeholder-3">Chatbot</a></li>
+                        <li><a href="#dev-placeholder-3">Eigene PlugIns schreiben</a></li>
+
                     </ul>
                 </li>
 
@@ -79,9 +84,8 @@
                         <span class="arrow">&gt;</span>
                     </div>
                     <ul class="sub-menu">
-                        <li><a href="#maint-placeholder-1">Maintainer Placeholder 1</a></li>
-                        <li><a href="#maint-placeholder-2">Maintainer Placeholder 2</a></li>
-                        <li><a href="#maint-placeholder-3">Maintainer Placeholder 3</a></li>
+                        <li><a href="#maint-placeholder-1">Benötigte Container</a></li>
+                        <li><a href="#maint-placeholder-2">Self-Hosting</a></li>
                     </ul>
                 </li>
             </ul>
@@ -95,41 +99,59 @@
             </header>
 
             <main>
-                <!-- Anforderungen Section -->
-                <h1 class="main-section-title">User Section</h1>
-                <section id="anforderungen" class="requirements">
-                    <h2>Anforderungen</h2>
-                    <ul>
-                        <li>Node.js Version 18.0 oder höher (prüfen mit <code>node -v</code>).</li>
-                        <li>Für die Verwaltung mehrerer Node-Versionen: <a href="#">nvm</a> verwenden.</li>
-                    </ul>
-                </section>
+                
+            </section>
+            <h1 class="main-section-title">User Section</h1>
+            <section id="meta-only" class="meta-only">
+            <section id="dev-placeholder-1">
+                <h2>Dashboard</h2>
+                <p>Inhalt für Entwickler-Platzhalter 1.</p>
+            </section>
+          </section>
 
-                <!-- Project Website Section -->
-                <section id="project-website" class="scaffold">
-                    <h2>Project Website</h2>
-                    <p>Der einfachste Weg, Docusaurus zu installieren, ist die Verwendung des <code>create-docusaurus</code>-Befehls:</p>
-                    <pre><code>npx create-docusaurus@latest my-website classic</code></pre>
-                    <p>Sie können auch TypeScript verwenden, indem Sie den <code>--typescript</code>-Schalter hinzufügen:</p>
-                    <pre><code>npx create-docusaurus@latest my-website classic --typescript</code></pre>
-                </section>
 
-                <!-- Meta-Only Section -->
-                <section id="meta-only" class="meta-only">
-                    <h2>Meta-Only</h2>
-                    <p>Wenn Sie ein Docusaurus-Projekt für eine Meta-Open-Source-Seite einrichten, verwenden Sie diese spezielle Konfiguration.</p>
-                </section>
 
-                <!-- Meta-Only Section -->
+
+
+          <section id="meta-only" class="meta-only">
+            <section id="dev-placeholder-2">
+                <h2>Keycloak</h2>
+                <p>
+                    Keycloak ist eine Open-Source-Softwarelösung für Identity- und Access-Management (IAM), die Single Sign-On (SSO), Authentifizierung und Autorisierung für Anwendungen und Dienste ermöglicht. 
+                </p>
+                <h2 class="kleine-unterstrichene-ueberschrift">Wie funktioniert Keycloak?</h2>
+                Keycloak bietet eine zentrale Stelle für die Verwaltung von Benutzeridentitäten und Zugriffsrechten. Nutzer können sich einmal anmelden (Single Sign-On) und auf verschiedene Anwendungen zugreifen, ohne sich erneut anmelden zu müssen. Keycloak übernimmt die Authentifizierung und gibt Zugriffsberechtigungen an andere Anwendungen weiter.
+                <h2 class="kleine-unterstrichene-ueberschrift">Warum verwenden wir Keycloak in unserer Plattform?</h2>
+                <ul>
+                    <li>  Single Sign-On (SSO): Mit Keycloak ermöglichen wir den Benutzern, sich einmal anzumelden und auf alle Teile der Plattform zuzugreifen, was die Benutzererfahrung vereinfacht.</li>
+                    <li> Organisationsfunktion: Keycloak unterstützt die Verwaltung von Benutzern und Ressourcen auf Organisationsebene, sodass Mitglieder nur auf Inhalte ihrer eigenen Organisation zugreifen können.</li>
+                    <li> Sicherheit und Datenschutz: Keycloak sorgt für eine sichere Authentifizierung und schützt die Plattform vor unbefugtem Zugriff.</li>
+                    <li> Datenisolation: Nur Mitglieder einer Organisation sehen die Inhalte ihrer eigenen Organisation, was die Privatsphäre und den Datenschutz gewährleistet.</li>
+                </ul>
+                Durch den Einsatz von Keycloak verbessern wir die Sicherheit, Benutzerfreundlichkeit und Verwaltung von Zugriffen auf der gesamten Plattform.
+                
+                
+            </section>
+        </section>
+
+                 <!-- ProtoGen User Section -->
                 <section id="meta-only" class="meta-only">
                     <h2>ProtoGen</h2>
                     <p>ProtoGen ist ein Plugin, das es Vereinen erleichtert, Protokolle effizient zu verwalten. Es ermöglicht einen schnellen Überblick über Protokolle, deren einfache Suche durch Filter (z. B. Datum und Ort) sowie die Ansicht und den Export Protokolle als PDF. Der Hauptvorteil liegt in der KI-gestützten Protokollerstellung, die den manuellen Aufwand minimiert.</p>
                     <h2 class="kleine-unterstrichene-ueberschrift">Grundlegende Funktionalitäten</h2>
                     <p>ProtoGen arbeitet mit KI-Technologien, um aus Audioaufzeichnungen Protokolle zu erstellen. Zunächst wird die Sprache in Text umgewandelt, Sprecher werden unterschieden, und anschließend generiert die KI einen Protokollvorschlag, der anpassbar ist. </p>
+                    <p>Protokollerstellung durch KI:
+                    <ul>
+                        <li>Aufnahme einer Besprechung hochladen</li>
+                        <li>KI analysiert mithilfe von Tools wie PyAnnotate und Vosk, erkennt Sprecher und wandelt Sprache in Text um</li>
+                        <li>Ein GPT-Modell generiert basierend auf dem Transkript einen Protokollvorschlag</li>
+                        <li>Manuelle Anpassungen: Der Nutzer kann das Transkript bearbeiten und den KI-Vorschlag verfeinern</li>
+                    </ul>
+                </p>
                     <h2 class="kleine-unterstrichene-ueberschrift">Anleitung zur Nutzung:</h2>
                     <ul>
-                        <li>Schritt 1: Aufnahme hochladen, die zur Umwandlung in Text gesendet wird. </li>
-                        <li>Schritt 2: Sprecher können optional benannt werden, basierend auf ausgewählten Textstellen.</li>
+                        <li>Schritt 1: Die Aufnahme, welche in Text umgewandelt und protokolliert werden soll, hochladen </li>
+                        <li>Schritt 2: Sprecher können optional benannt werden, basierend auf ausgewählten Textstellen </li>
                         <li>Schritt 3: Der transkribierte Text kann überprüft, bearbeitet und von irrelevanten Inhalten bereinigt werden.</li>
                         <li>Schritt 4: Die KI generiert basierend auf der bereinigten Transkription einen Protokollvorschlag, der weiter angepasst werden kann</li>
                     </ul>
@@ -144,38 +166,239 @@
                         <li>Keycloak-SSO schützt Zugänge und gewährleistet, dass nur autorisierte Personen Protokolle einsehen können.</li>
                         <li> Zugriffsbeschränkung auf Protokolle der eigenen Organisation.</li>
                     </ul>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Lokale Installation:</h2>
+                    <p>Voraussetzungen:</p>
+                    <ul>
+                        <li>Docker installieren</li>
+                        <li>Die folgenden repositories clonen:</li>
+                        <code>https://github.com/SoftwareEngineering-WS2025-ARMMS/ProtoGen-fe.git</code>
+                      <br>  <code>https://github.com/SoftwareEngineering-WS2025-ARMMS/GEN_AI_Protokoll.git</code>
+                    </ul>
+                    <p>Starten des Backend-Servers mit Docker:</p>
+                    <ol>
+                        <li>Stellen Sie sicher, dass Docker und Docker Compose installiert sind</li>
+                        <li>Erstellen Sie die Dateien <q>CHATGPT_API</q>, <q>PYANNOTE_KEY</q>, <q>client_secrets.json</q>, <q>database_metadata.json</q> im .venv-Ordner.
+                            <br>Es ist kein Problem, wenn die virtuelle Umgebung nicht erstellt wurde. Der Befehl:
+                            <pre><code>mkdir .venv</code></pre>
+                            ist ausreichend, um den Server im Docker-Container auszuführen.
+                        </li>
+                        <li>Führen Sie <q>restart_docker.sh</q> aus:
+                        </li>
+                    </ol>
+                    <p>Containerization:</p>
+                    <pre><code>docker-compose build # Build the image docker-compose up -d # Start the container in detached mode</code></pre>
+                    <p>Entwicklungsserver 
+                        <br> Um einen lokalen Entwicklungsserveng server zu starten, führen Sie Folgendes aus:
+                        <pre><code>ng serve</code></pre>
+                        Sobald der Server läuft, öffnen Sie Ihren Browser und navigieren Sie zu <code>http://localhost:4200/</code>. Die Anwendung lädt sich automatisch neu, wenn Sie Änderungen an den Quelldateien vornehmen.
+                    </p>
+                    <p>Code scaffolding
+                        <br> Die Angular CLI enthält leistungsstarke Code-Scaffolding-Tools. Um eine neue Komponente zu generieren, führen Sie aus:
+                        <pre><code>ng generate component komponenten-name</code></pre>
+                        Für eine vollständige Liste verfügbarer Schemas (z. B. <i>components</i>, <i>directives</i> oder <i>pipes</i>) führen Sie Folgendes aus:
+                        ng generate —help
+                        <pre><code>ng generate -help</code></pre>
+                    </p>
+                    <p>Build-Prozess
+                        Um das Projekt zu kompilieren, führen Sie Folgendes aus:
+                        <pre><code>ng build</code></pre>
+                        Dies kompiliert Ihr Projekt und speichert die Build-Artefakte im <i>dist/</i>-Verzeichnis. Standardmäßig optimiert der Produktions-Build Ihre Anwendung für Leistung und Geschwindigkeit.
+                    </p>
+                    <p>Unit-Tests ausführen
+                        Um Unit-Tests mit dem Karma-Test-Runner auszuführen, nutzen Sie den folgenden Befehl:
+                        <pre><code>ng test</code></pre>
+                    </p>
+                    <p>End-to-End-Tests ausführen
+                        Für End-to-End-Tests (E2E) führen Sie Folgendes aus:
+                        <pre><code>ng e2e</code></pre>
+                        Die Angular CLI wird standardmäßig nicht mit einem End-to-End-Test-Framework ausgeliefert. Sie können das Framework wählen, das Ihren Anforderungen entspricht.
+                    </p>
+
 
 
                 </section>
+
+
+
+                <!-- Chatbot User Section -->
+                <section id="meta-only" class="meta-only">
+                    <h2>Chatbot</h2>
+                    <p>Der KI-gestützte Vereins-Chatbot unterstützt Mitarbeiter dabei, schnell und effizient auf wichtige Informationen zuzugreifen. Statt zeitaufwendig Protokolle, To-Do-Listen oder andere Dokumente manuell durchzugehen, können Nutzer ihre Fragen direkt an den Chatbot richten und erhalten präzise Antworten. Das Ziel ist es, Arbeitsprozesse zu vereinfachen und die interne Kommunikation und Organisation zu verbessern.</p>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Grundlegende Funktionalitäten</h2>
+                    <p>Der Chatbot funktioniert in drei einfachen Schritten:
+                    <ol>
+                        <li>Frage stellen: Der Nutzer gibt eine Frage oder Suchanfrage ein, z. B. “Was wurde im letzten Team-Meeting beschlossen?”</li>
+                        <li>Relevante Dokumente finden: Der Chatbot durchsucht die angebundenen Speichermedien (wie Dropbox oder andere Cloud-Dienste) nach den passenden Dateien, z. B. Protokolle, Aufgabenlisten oder Projektpläne</li>
+                        <li>Antwort generieren: Basierend auf den gefundenen Informationen erstellt der Chatbot eine prägnante Zusammenfassung, kann konkrete Zitate aus den Dokumenten anzeigen und beantwortet auch Rückfragen, um Details weiter zu präzisieren</li>
+                    </ol>
+                </p>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Anleitung zur Nutzung:</h2>
+                    <ul>
+                        <li>Verbindung herstellen: Verknüpfen Sie den Chatbot zunächst mit dem gewünschten Speicherdienst (z. B. Dropbox). </li>
+                        <li> Frage formulieren: Geben Sie Ihre Frage im Chatfenster ein. Je präziser die Frage, desto detaillierter kann der Chatbot antworten.</li>
+                        <li>Antwort lesen und Rückfragen stellen: Die Antwort erscheint in wenigen Sekunden. Bei Bedarf können Sie weitere Rückfragen stellen oder sich Textstellen aus den Originaldokumenten anzeigen lassen.</li>
+                        <li>Dokumente durchsuchen: Sollte ein Dokument direkt angezeigt werden, können Sie auch selbst darin stöbern und zusätzliche Details einsehen.</li>
+                    </ul>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Datenschutz und Sicherheit:</h2>
+                    <ul>
+                        <li>Keycloak-SSO schützt Zugänge und gewährleistet, dass nur autorisierte Personen Protokolle einsehen können.</li>
+                        <li> Zugriffsbeschränkung auf Protokolle der eigenen Organisation.</li>
+                    </ul>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <!-- Developer Section Placeholder -->
                 <h1 class="main-section-title">Developer Section</h1>
+                <section id="meta-only" class="meta-only">
                 <section id="dev-placeholder-1">
-                    <h2>Development Placeholder 1</h2>
+                    <h2>Storage Engine</h2>
                     <p>Inhalt für Entwickler-Platzhalter 1.</p>
                 </section>
+              </section>
+
+              <section id="meta-only" class="meta-only">
                 <section id="dev-placeholder-2">
-                    <h2>Development Placeholder 2</h2>
+                    <h2>Keycloak</h2>
                     <p>Inhalt für Entwickler-Platzhalter 2.</p>
+
+
+
+
+                    
                 </section>
+            </section>
+
+
+
+                <section id="meta-only" class="meta-only">
                 <section id="dev-placeholder-3">
-                    <h2>Development Placeholder 3</h2>
-                    <p>Inhalt für Entwickler-Platzhalter 3.</p>
+                    <h2>ProtoGen: GEN_AI_Protokoll</h2>
+                    <p>Um den Server auszuführen, müssen einige Pakete installiert werden (empfohlen wird die Verwendung von Python venv oder Conda).</p>
+                    <p>Pyannote</p>
+                    <ol>
+                        <li>Installiere Pyannote.audio</li>
+                        <pre><code>pip install pyannote.audio</code></pre>
+                        <li>HuggingFace</li>
+                        <ol>
+                            <li>Registriere dich oder melde dich an bei <a href>https://huggingface.co</a> TODO Link anpassen</li>
+                            <li>Akzeptiere <a href>https://huggingface.co/pyannote/segmentation-3.0</a> TODO Link anpassen</li>
+                            <li>Akzeptiere <a href>https://huggingface.co/pyannote/segmentation-3.1</a> TODO Link anpassen</li>
+                            <li>Erstelle einen Zugangstoken auf <a href>https://huggingface.co/login?next=%2Fsettings%2Ftokens</a> TODO Link anpassen</li>
+                            <li>Kopiere den Zugangstoken an einen sicheren Ort, sodass er nicht öffentlich zugänglich ist. <br>(Bei der Nutzung von venv empfehlen wir, ihn in eine Datei <q>.venv/PYANNOTE_KEY</q> zu speichern).</li>
+                        </ol>
+                        Hinweis: Wenn du einen anderen Speicherort wählst, vergiss nicht, den Pfad "__key_path__" in der Datei src/utils/Annotation.py entsprechend anzupassen.
+                    </ol>
+                    <p>OpenAI-Schlüssel
+                        <br> Da für den Moment die OpenAI-API verwendet wird, benötigst du einen OpenAI-Zugangstoken, der an einem sicheren Ort gespeichert wird. 
+                        <br> (Bei der Verwendung von venv empfehlen wir, ihn in eine Datei '.venv/CHATGPT_API' zu speichern).
+                       <br> Hinweis: Falls du einen anderen Speicherort wählst, vergiss nicht, den Pfad "__key_path__" in der Datei src/utils/OpenAIClient.py zu aktualisieren.
+                    </p>
+                    <p>Datenbank-Konfiguration
+                        Um den Datenbank-Container auszuführen, erstelle eine Datei database_metadata.json im .venv-Ordner. 
+                        <br>Diese JSON-Datei sollte die folgenden Attribute enthalten:
+
+                        <h1>Beispiel JSON-Code in einem angepassten Feld</h1>
+
+                        <!-- Code-Feld -->
+                        <pre class="json-code">
+                    {
+                        "db_name": "YOUR_DATABASE_NAME",
+                        "user_name": "YOUR_USERNAME",
+                        "password": "YOUR_PASSWORD",
+                        "host": "THE_HOST_RUNNING_THE_DB",
+                        "port": 5432
+                    }
+                        </pre>
+                    </p>
+                    <p>Keycloak-Konfiguration
+                    Um den Server auszuführen, wird eine Keycloak-Konfiguration benötigt. Diese wird in der Datei client_secrets.json im Ordner .venv gespeichert.
+                    <br> Die JSON-Datei enthält die folgenden Attribute:
+                    <h1>Beispiel JSON-Code in einem angepassten Feld</h1>
+
+                    <!-- Code-Feld -->
+                    <pre class="json-code">
+                        {
+                            "web": {
+                              "issuer": "ISSUER_URI",
+                              "auth_uri": "AUTH_URI",
+                              "client_id": "CLIENT_ID",
+                              "client_secret": "CLIENT_SECRET",
+                              "token_uri": "TOKEN_URI",
+                              "redirect_uris" : ["REDIRECT_URI"],
+                              "userinfo_uri": "USER_INFO_URI"
+                            }
+                          }
+                    </pre>
+                    Weitere Informationen zu <a href>https://www.keycloak.org</a> und <a href>https://flask-oidc.readthedocs.io/en/latest/ </a> TODO Link anpassen
+                </p>
+
+                <p>Server lokal ausführen
+                    Wenn du den Server lokal ausführen möchtest:
+                    <ol>
+                        <li>Erstelle eine Python-virtuelle Umgebung und installiere die benötigten Pakete</li>
+                        <pre><code>pip install pyannote.audio</code></pre>
+
+
+                    </ol>
+
+                </p>
+
+          
+
                 </section>
+            </section>
+
+
+
+
+
+
+
+
+                <section id="meta-only" class="meta-only">
+                <section id="dev-placeholder-3">
+                    <h2>Chatbot</h2>
+                    <p>Inhalt für Entwickler-Platzhalter 4.</p>
+                </section>
+            </section>
+
+                <section id="meta-only" class="meta-only">
+                <section id="dev-placeholder-3">
+                    <h2>Eigene PlugIns schreiben</h2>
+                    <p>Inhalt für Entwickler-Platzhalter 5.</p>
+                </section>
+            </section>
+
+
+
+
+
+
 
                 <!-- Maintainer Section Placeholder -->
                 <h1 class="main-section-title">Maintainer Section</h1>
                 <section id="maint-placeholder-1">
-                    <h2>Maintainer Placeholder 1</h2>
+                    <h2>Benötigte Container</h2>
                     <p>Inhalt für Maintainer-Platzhalter 1.</p>
                 </section>
                 <section id="maint-placeholder-2">
-                    <h2>Maintainer Placeholder 2</h2>
+                    <h2>Self-Hosting</h2>
                     <p>Inhalt für Maintainer-Platzhalter 2.</p>
-                </section>
-                <section id="maint-placeholder-3">
-                    <h2>Maintainer Placeholder 3</h2>
-                    <p>Inhalt für Maintainer-Platzhalter 3.</p>
                 </section>
             </main>
 
