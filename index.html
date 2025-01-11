@@ -117,16 +117,22 @@
             <section id="dev-placeholder-2">
                 <h2>Keycloak</h2>
                 <p>
-                    Keycloak ist eine Open-Source-Softwarelösung für Identity- und Access-Management (IAM), die Single Sign-On (SSO), Authentifizierung und Autorisierung für Anwendungen und Dienste ermöglicht. 
+                    Keycloak ist eine Open-Source-Softwarelösung für Identity- und Access-Management (IAM), 
+                    die Single Sign-On (SSO), Authentifizierung und Autorisierung für Anwendungen und Dienste ermöglicht. 
                 </p>
                 <h2 class="kleine-unterstrichene-ueberschrift">Wie funktioniert Keycloak?</h2>
-                Keycloak bietet eine zentrale Stelle für die Verwaltung von Benutzeridentitäten und Zugriffsrechten. Nutzer können sich einmal anmelden (Single Sign-On) und auf verschiedene Anwendungen zugreifen, ohne sich erneut anmelden zu müssen. Keycloak übernimmt die Authentifizierung und gibt Zugriffsberechtigungen an andere Anwendungen weiter.
+                Keycloak bietet eine zentrale Stelle für die Verwaltung von Benutzeridentitäten und Zugriffsrechten. 
+                Nutzer können sich einmal anmelden (Single Sign-On) und auf verschiedene Anwendungen zugreifen, ohne sich erneut anmelden zu müssen. 
+                Keycloak übernimmt die Authentifizierung und gibt Zugriffsberechtigungen an andere Anwendungen weiter.
                 <h2 class="kleine-unterstrichene-ueberschrift">Warum verwenden wir Keycloak in unserer Plattform?</h2>
                 <ul>
-                    <li>  Single Sign-On (SSO): Mit Keycloak ermöglichen wir den Benutzern, sich einmal anzumelden und auf alle Teile der Plattform zuzugreifen, was die Benutzererfahrung vereinfacht.</li>
-                    <li> Organisationsfunktion: Keycloak unterstützt die Verwaltung von Benutzern und Ressourcen auf Organisationsebene, sodass Mitglieder nur auf Inhalte ihrer eigenen Organisation zugreifen können.</li>
+                    <li>  Single Sign-On (SSO): Mit Keycloak ermöglichen wir den Benutzern, sich einmal anzumelden und 
+                        auf alle Teile der Plattform zuzugreifen, was die Benutzererfahrung vereinfacht.</li>
+                    <li> Organisationsfunktion: Keycloak unterstützt die Verwaltung von Benutzern und Ressourcen 
+                        auf Organisationsebene, sodass Mitglieder nur auf Inhalte ihrer eigenen Organisation zugreifen können.</li>
                     <li> Sicherheit und Datenschutz: Keycloak sorgt für eine sichere Authentifizierung und schützt die Plattform vor unbefugtem Zugriff.</li>
-                    <li> Datenisolation: Nur Mitglieder einer Organisation sehen die Inhalte ihrer eigenen Organisation, was die Privatsphäre und den Datenschutz gewährleistet.</li>
+                    <li> Datenisolation: Nur Mitglieder einer Organisation sehen die Inhalte ihrer eigenen Organisation, 
+                        was die Privatsphäre und den Datenschutz gewährleistet.</li>
                 </ul>
                 Durch den Einsatz von Keycloak verbessern wir die Sicherheit, Benutzerfreundlichkeit und Verwaltung von Zugriffen auf der gesamten Plattform.
                 
@@ -137,9 +143,14 @@
                  <!-- ProtoGen User Section -->
                 <section id="meta-only" class="meta-only">
                     <h2>ProtoGen</h2>
-                    <p>ProtoGen ist ein Plugin, das es Vereinen erleichtert, Protokolle effizient zu verwalten. Es ermöglicht einen schnellen Überblick über Protokolle, deren einfache Suche durch Filter (z. B. Datum und Ort) sowie die Ansicht und den Export Protokolle als PDF. Der Hauptvorteil liegt in der KI-gestützten Protokollerstellung, die den manuellen Aufwand minimiert.</p>
+                    <p>ProtoGen ist ein Plugin, das es Vereinen erleichtert, Protokolle effizient zu verwalten. 
+                        Es ermöglicht einen schnellen Überblick über Protokolle, deren einfache Suche durch Filter 
+                        (z. B. Datum und Ort) sowie die Ansicht und den Export Protokolle als PDF. 
+                        Der Hauptvorteil liegt in der KI-gestützten Protokollerstellung, die den manuellen Aufwand minimiert.</p>
                     <h2 class="kleine-unterstrichene-ueberschrift">Grundlegende Funktionalitäten</h2>
-                    <p>ProtoGen arbeitet mit KI-Technologien, um aus Audioaufzeichnungen Protokolle zu erstellen. Zunächst wird die Sprache in Text umgewandelt, Sprecher werden unterschieden, und anschließend generiert die KI einen Protokollvorschlag, der anpassbar ist. </p>
+                    <p>ProtoGen arbeitet mit KI-Technologien, um aus Audioaufzeichnungen Protokolle zu erstellen. 
+                        Zunächst wird die Sprache in Text umgewandelt, Sprecher werden unterschieden, 
+                        und anschließend generiert die KI einen Protokollvorschlag, der anpassbar ist. </p>
                     <p>Protokollerstellung durch KI:
                     <ul>
                         <li>Aufnahme einer Besprechung hochladen</li>
@@ -153,7 +164,8 @@
                         <li>Schritt 1: Die Aufnahme, welche in Text umgewandelt und protokolliert werden soll, hochladen </li>
                         <li>Schritt 2: Sprecher können optional benannt werden, basierend auf ausgewählten Textstellen </li>
                         <li>Schritt 3: Der transkribierte Text kann überprüft, bearbeitet und von irrelevanten Inhalten bereinigt werden.</li>
-                        <li>Schritt 4: Die KI generiert basierend auf der bereinigten Transkription einen Protokollvorschlag, der weiter angepasst werden kann</li>
+                        <li>Schritt 4: Die KI generiert basierend auf der bereinigten Transkription einen Protokollvorschlag, 
+                            der weiter angepasst werden kann</li>
                     </ul>
                     <h2 class="kleine-unterstrichene-ueberschrift">Speicherung und Export</h2>
                     <ul>
@@ -177,7 +189,8 @@
                     <p>Starten des Backend-Servers mit Docker:</p>
                     <ol>
                         <li>Stellen Sie sicher, dass Docker und Docker Compose installiert sind</li>
-                        <li>Erstellen Sie die Dateien <q>CHATGPT_API</q>, <q>PYANNOTE_KEY</q>, <q>client_secrets.json</q>, <q>database_metadata.json</q> im .venv-Ordner.
+                        <li>Erstellen Sie die Dateien <q>CHATGPT_API</q>, <q>PYANNOTE_KEY</q>, <q>client_secrets.json</q>, 
+                            <q>database_metadata.json</q> im .venv-Ordner.
                             <br>Es ist kein Problem, wenn die virtuelle Umgebung nicht erstellt wurde. Der Befehl:
                             <pre><code>mkdir .venv</code></pre>
                             ist ausreichend, um den Server im Docker-Container auszuführen.
@@ -190,7 +203,8 @@
                     <p>Entwicklungsserver 
                         <br> Um einen lokalen Entwicklungsserveng server zu starten, führen Sie Folgendes aus:
                         <pre><code>ng serve</code></pre>
-                        Sobald der Server läuft, öffnen Sie Ihren Browser und navigieren Sie zu <code>http://localhost:4200/</code>. Die Anwendung lädt sich automatisch neu, wenn Sie Änderungen an den Quelldateien vornehmen.
+                        Sobald der Server läuft, öffnen Sie Ihren Browser und navigieren Sie zu <code>http://localhost:4200/</code>. 
+                        Die Anwendung lädt sich automatisch neu, wenn Sie Änderungen an den Quelldateien vornehmen.
                     </p>
                     <p>Code scaffolding
                         <br> Die Angular CLI enthält leistungsstarke Code-Scaffolding-Tools. Um eine neue Komponente zu generieren, führen Sie aus:
@@ -202,7 +216,8 @@
                     <p>Build-Prozess
                         Um das Projekt zu kompilieren, führen Sie Folgendes aus:
                         <pre><code>ng build</code></pre>
-                        Dies kompiliert Ihr Projekt und speichert die Build-Artefakte im <i>dist/</i>-Verzeichnis. Standardmäßig optimiert der Produktions-Build Ihre Anwendung für Leistung und Geschwindigkeit.
+                        Dies kompiliert Ihr Projekt und speichert die Build-Artefakte im <i>dist/</i>-Verzeichnis. Standardmäßig optimiert der 
+                        Produktions-Build Ihre Anwendung für Leistung und Geschwindigkeit.
                     </p>
                     <p>Unit-Tests ausführen
                         Um Unit-Tests mit dem Karma-Test-Runner auszuführen, nutzen Sie den folgenden Befehl:
@@ -211,7 +226,8 @@
                     <p>End-to-End-Tests ausführen
                         Für End-to-End-Tests (E2E) führen Sie Folgendes aus:
                         <pre><code>ng e2e</code></pre>
-                        Die Angular CLI wird standardmäßig nicht mit einem End-to-End-Test-Framework ausgeliefert. Sie können das Framework wählen, das Ihren Anforderungen entspricht.
+                        Die Angular CLI wird standardmäßig nicht mit einem End-to-End-Test-Framework ausgeliefert. Sie können das Framework wählen, 
+                        das Ihren Anforderungen entspricht.
                     </p>
 
 
@@ -223,20 +239,26 @@
                 <!-- Chatbot User Section -->
                 <section id="meta-only" class="meta-only">
                     <h2>Chatbot</h2>
-                    <p>Der KI-gestützte Vereins-Chatbot unterstützt Mitarbeiter dabei, schnell und effizient auf wichtige Informationen zuzugreifen. Statt zeitaufwendig Protokolle, To-Do-Listen oder andere Dokumente manuell durchzugehen, können Nutzer ihre Fragen direkt an den Chatbot richten und erhalten präzise Antworten. Das Ziel ist es, Arbeitsprozesse zu vereinfachen und die interne Kommunikation und Organisation zu verbessern.</p>
+                    <p>Der KI-gestützte Vereins-Chatbot unterstützt Mitarbeiter dabei, schnell und effizient auf wichtige Informationen zuzugreifen. 
+                        Statt zeitaufwendig Protokolle, To-Do-Listen oder andere Dokumente manuell durchzugehen, können Nutzer ihre Fragen direkt an den 
+                        Chatbot richten und erhalten präzise Antworten. Das Ziel ist es, Arbeitsprozesse zu vereinfachen und die interne Kommunikation
+                         und Organisation zu verbessern.</p>
                     <h2 class="kleine-unterstrichene-ueberschrift">Grundlegende Funktionalitäten</h2>
                     <p>Der Chatbot funktioniert in drei einfachen Schritten:
                     <ol>
                         <li>Frage stellen: Der Nutzer gibt eine Frage oder Suchanfrage ein, z. B. “Was wurde im letzten Team-Meeting beschlossen?”</li>
-                        <li>Relevante Dokumente finden: Der Chatbot durchsucht die angebundenen Speichermedien (wie Dropbox oder andere Cloud-Dienste) nach den passenden Dateien, z. B. Protokolle, Aufgabenlisten oder Projektpläne</li>
-                        <li>Antwort generieren: Basierend auf den gefundenen Informationen erstellt der Chatbot eine prägnante Zusammenfassung, kann konkrete Zitate aus den Dokumenten anzeigen und beantwortet auch Rückfragen, um Details weiter zu präzisieren</li>
+                        <li>Relevante Dokumente finden: Der Chatbot durchsucht die angebundenen Speichermedien (wie Dropbox oder andere Cloud-Dienste) 
+                            nach den passenden Dateien, z. B. Protokolle, Aufgabenlisten oder Projektpläne</li>
+                        <li>Antwort generieren: Basierend auf den gefundenen Informationen erstellt der Chatbot eine prägnante Zusammenfassung, 
+                            kann konkrete Zitate aus den Dokumenten anzeigen und beantwortet auch Rückfragen, um Details weiter zu präzisieren</li>
                     </ol>
                 </p>
                     <h2 class="kleine-unterstrichene-ueberschrift">Anleitung zur Nutzung:</h2>
                     <ul>
                         <li>Verbindung herstellen: Verknüpfen Sie den Chatbot zunächst mit dem gewünschten Speicherdienst (z. B. Dropbox). </li>
                         <li> Frage formulieren: Geben Sie Ihre Frage im Chatfenster ein. Je präziser die Frage, desto detaillierter kann der Chatbot antworten.</li>
-                        <li>Antwort lesen und Rückfragen stellen: Die Antwort erscheint in wenigen Sekunden. Bei Bedarf können Sie weitere Rückfragen stellen oder sich Textstellen aus den Originaldokumenten anzeigen lassen.</li>
+                        <li>Antwort lesen und Rückfragen stellen: Die Antwort erscheint in wenigen Sekunden. Bei Bedarf können Sie weitere 
+                            Rückfragen stellen oder sich Textstellen aus den Originaldokumenten anzeigen lassen.</li>
                         <li>Dokumente durchsuchen: Sollte ein Dokument direkt angezeigt werden, können Sie auch selbst darin stöbern und zusätzliche Details einsehen.</li>
                     </ul>
                     <h2 class="kleine-unterstrichene-ueberschrift">Datenschutz und Sicherheit:</h2>
@@ -299,7 +321,8 @@
                             <li>Akzeptiere <a href>https://huggingface.co/pyannote/segmentation-3.0</a> TODO Link anpassen</li>
                             <li>Akzeptiere <a href>https://huggingface.co/pyannote/segmentation-3.1</a> TODO Link anpassen</li>
                             <li>Erstelle einen Zugangstoken auf <a href>https://huggingface.co/login?next=%2Fsettings%2Ftokens</a> TODO Link anpassen</li>
-                            <li>Kopiere den Zugangstoken an einen sicheren Ort, sodass er nicht öffentlich zugänglich ist. <br>(Bei der Nutzung von venv empfehlen wir, ihn in eine Datei <q>.venv/PYANNOTE_KEY</q> zu speichern).</li>
+                            <li>Kopiere den Zugangstoken an einen sicheren Ort, sodass er nicht öffentlich zugänglich ist. 
+                                <br>(Bei der Nutzung von venv empfehlen wir, ihn in eine Datei <q>.venv/PYANNOTE_KEY</q> zu speichern).</li>
                         </ol>
                         Hinweis: Wenn du einen anderen Speicherort wählst, vergiss nicht, den Pfad "__key_path__" in der Datei src/utils/Annotation.py entsprechend anzupassen.
                     </ol>
@@ -352,6 +375,17 @@
                     <ol>
                         <li>Erstelle eine Python-virtuelle Umgebung und installiere die benötigten Pakete</li>
                         <pre><code>pip install pyannote.audio</code></pre>
+                        <pre><code>pip install  -r requirements.txt</code></pre>
+                        <li>Erstelle die Dateien CHATGPT_API, PYANNOTE_KEY, client_secrets.json, database_metadata.json im .venv-Ordner.</li>
+                        <li>Verwende “localhost” als Host in der Datei database_metadata.json.
+                        </li>
+                        <li>Stelle sicher, dass docker-compose installiert ist.
+                        </li>
+                        <li>Führe restart_local_server.sh aus:
+                        </li>
+                        <pre><code>./restart_local_server.sh;</code></pre>
+
+
 
 
                     </ol>
