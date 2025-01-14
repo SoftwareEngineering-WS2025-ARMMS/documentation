@@ -7,7 +7,10 @@
     <title>Doku-Seite</title>
     <title>Beispiel mit Link</title>
     <title>JSON Code-Beispiel</title>
+    <title>Vergrößerte Symbole</title>
+    <title>Beispielseite</title>
     <link rel="stylesheet" href="style.css">
+    <title>Bild einbinden</title>
 </head>
 <body>
     <div class="container">
@@ -15,50 +18,53 @@
         <nav class="sidebar">
             <h3>Content</h3>
             <ul>
-                <!-- User Section -->
-                <li class="section-header">
-                    <div class="section-title">
-                        <span>User Section</span>
-                        <span class="arrow">&gt;</span>
-                    </div>
-                    <ul class="sub-menu">
-                        <!-- Dashboard -->
-                        <li><a href="#dashboard">Dashboard</a></li>
+            <!-- User Section -->
+            <li class="section-header">
+                <div class="section-title">
+                    <span>User Section</span>
+                    <span class="arrow">&gt;</span>
+                </div>
+                <ul class="sub-menu">
+                    <!-- Dashboard -->
+                    <li><a href="#dashboard">Dashboard</a></li>
+    
+                    <!-- Keycloak -->
+                    <li><a href="#keycloak">Keycloak</a></li>
 
-                        <!-- Keycloak -->
-                        <li><a href="#keycloak">Keycloak</a></li>
-
-                        <!-- ProtoGen mit Untermenü -->
-                        <li class="section-header">
-                            <div class="section-title">
-                                <span>ProtoGen</span>
-                                <span class="arrow">&gt;</span>
-                            </div>
-                            <ul class="sub-menu">
-                                <li><a href="#zweck-protogen">Zweck</a></li>
-                                <li><a href="#grundlagen-protogen">Grundlagen der Funktionsweise</a></li>
-                                <li><a href="#anleitung-protogen">Anleitung zur Nutzung</a></li>
-                                <li><a href="#speicherung-protogen">Speicherung und Export</a></li>
-                                <li><a href="#datenschutz-protogen">Datenschutz und Sicherheit</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- Chatbot mit Untermenü -->
-                        <li class="section-header">
-                            <div class="section-title">
-                                <span>Chatbot</span>
-                                <span class="arrow">&gt;</span>
-                            </div>
-                            <ul class="sub-menu">
-                                <li><a href="#zweck-chatbot">Zweck</a></li>
-                                <li><a href="#grundlagen-chatbot">Grundlagen der Funktionsweise</a></li>
-                                <li><a href="#oberflaeche-chatbot">Benutzeroberfläche</a></li>
-                                <li><a href="#anleitung-chatbot">Anleitung zur Nutzung</a></li>
-                                <li><a href="#datenschutz-chatbot">Datenschutz und Sicherheit</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+                    <!-- Storage Engine -->
+                    <li><a href="#storageEngine">Storage Engine</a></li>
+    
+                    <!-- ProtoGen -->
+                    <li class="section-header">
+                        <div class="section-title">
+                            <span>ProtoGen</span>
+                            <span class="arrow">&gt;</span>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#zweck-protogen">Zweck</a></li>
+                            <li><a href="#grundlagen-protogen">Grundlagen der Funktionsweise</a></li>
+                            <li><a href="#anleitung-protogen">Anleitung zur Nutzung</a></li>
+                            <li><a href="#speicherung-protogen">Speicherung und Export</a></li>
+                            <li><a href="#datenschutz-protogen">Datenschutz und Sicherheit</a></li>
+                        </ul>
+                    </li>
+    
+                    <!-- Chatbot -->
+                    <li class="section-header">
+                        <div class="section-title">
+                            <span>Chatbot</span>
+                            <span class="arrow">&gt;</span>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#zweck-chatbot">Zweck</a></li>
+                            <li><a href="#grundlagen-chatbot">Grundlagen der Funktionsweise</a></li>
+                            <li><a href="#oberflaeche-chatbot">Benutzeroberfläche</a></li>
+                            <li><a href="#anleitung-chatbot">Anleitung zur Nutzung</a></li>
+                            <li><a href="#datenschutz-chatbot">Datenschutz und Sicherheit</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
 
 
                 <!-- Developer Section -->
@@ -72,7 +78,6 @@
                         <li><a href="#dev-placeholder-2">Keycloak</a></li>
                         <li><a href="#dev-placeholder-3">ProtoGen</a></li>
                         <li><a href="#dev-placeholder-3">Chatbot</a></li>
-                        <li><a href="#dev-placeholder-3">Eigene PlugIns schreiben</a></li>
 
                     </ul>
                 </li>
@@ -110,6 +115,19 @@
           </section>
 
 
+          <section id="meta-only" class="meta-only">
+            <section id="dev-placeholder-1.5">
+                <h2>Storage Engine &#128450</h2>
+                <ul>
+                    <li>Die Speicher-Engine bildet die Grundlage, auf der alle anderen Plugins aufbauen</li>
+                    <li>Sie nutzt Dropbox zum Speichern und Abrufen von Dateien</li>
+                    <li>Sie stellt dem <a href="us-chatbot">Chatbot</a> Dokumente bereit, auf deren Basis dieser seine Antworten formuliert</li>
+                    <li><a href="us-protogen">ProtoGen</a> kann Besprechungsprotokolle direkt dorthin exportieren</li>
+
+                </ul>
+            </section>
+          </section>
+
 
 
 
@@ -117,21 +135,21 @@
             <section id="dev-placeholder-2">
                 <h2>Keycloak</h2>
                 <p>
-                    Keycloak ist eine Open-Source-Softwarelösung für Identity- und Access-Management (IAM), 
+                    <a href="ds-keycloak">Keycloak</a> ist eine Open-Source-Softwarelösung für <b>Identity- und Access-Management</b> (IAM), 
                     die Single Sign-On (SSO), Authentifizierung und Autorisierung für Anwendungen und Dienste ermöglicht. 
                 </p>
                 <h2 class="kleine-unterstrichene-ueberschrift">Wie funktioniert Keycloak?</h2>
-                Keycloak bietet eine zentrale Stelle für die Verwaltung von Benutzeridentitäten und Zugriffsrechten. 
+                Keycloak bietet eine zentrale Stelle für die <b>Verwaltung von Benutzeridentitäten und Zugriffsrechten</b>. 
                 Nutzer können sich einmal anmelden (Single Sign-On) und auf verschiedene Anwendungen zugreifen, ohne sich erneut anmelden zu müssen. 
                 Keycloak übernimmt die Authentifizierung und gibt Zugriffsberechtigungen an andere Anwendungen weiter.
                 <h2 class="kleine-unterstrichene-ueberschrift">Warum verwenden wir Keycloak in unserer Plattform?</h2>
                 <ul>
-                    <li>  Single Sign-On (SSO): Mit Keycloak ermöglichen wir den Benutzern, sich einmal anzumelden und 
+                    &#10004 <b>Single Sign-On (SSO)</b>: Mit Keycloak ermöglichen wir den Benutzern, sich einmal anzumelden und 
                         auf alle Teile der Plattform zuzugreifen, was die Benutzererfahrung vereinfacht.</li>
-                    <li> Organisationsfunktion: Keycloak unterstützt die Verwaltung von Benutzern und Ressourcen 
+                    <br>&#10004 <b>Organisationsfunktion</b>: Keycloak unterstützt die Verwaltung von Benutzern und Ressourcen 
                         auf Organisationsebene, sodass Mitglieder nur auf Inhalte ihrer eigenen Organisation zugreifen können.</li>
-                    <li> Sicherheit und Datenschutz: Keycloak sorgt für eine sichere Authentifizierung und schützt die Plattform vor unbefugtem Zugriff.</li>
-                    <li> Datenisolation: Nur Mitglieder einer Organisation sehen die Inhalte ihrer eigenen Organisation, 
+                    <br>&#10004 <b>Sicherheit und Datenschutz</b>: Keycloak sorgt für eine sichere Authentifizierung und schützt die Plattform vor unbefugtem Zugriff.</li>
+                    <br>&#10004 <b>Datenisolation</b>: Nur Mitglieder einer Organisation sehen die Inhalte ihrer eigenen Organisation, 
                         was die Privatsphäre und den Datenschutz gewährleistet.</li>
                 </ul>
                 Durch den Einsatz von Keycloak verbessern wir die Sicherheit, Benutzerfreundlichkeit und Verwaltung von Zugriffen auf der gesamten Plattform.
@@ -142,29 +160,27 @@
 
                  <!-- ProtoGen User Section -->
                 <section id="meta-only" class="meta-only">
-                    <h2>ProtoGen</h2>
+                    <h2 id="us-protogen">ProtoGen &#128209</h2>
                     <p>ProtoGen ist ein Plugin, das es Vereinen erleichtert, Protokolle effizient zu verwalten. 
                         Es ermöglicht einen schnellen Überblick über Protokolle, deren einfache Suche durch Filter 
                         (z. B. Datum und Ort) sowie die Ansicht und den Export Protokolle als PDF. 
                         Der Hauptvorteil liegt in der KI-gestützten Protokollerstellung, die den manuellen Aufwand minimiert.</p>
-                    <h2 class="kleine-unterstrichene-ueberschrift">Grundlegende Funktionalitäten</h2>
-                    <p>ProtoGen arbeitet mit KI-Technologien, um aus Audioaufzeichnungen Protokolle zu erstellen. 
+                    <h1>Grundlegende Funktionalitäten</h1>
+                    <p> &#128161; ProtoGen arbeitet mit KI-Technologien, um aus Audioaufzeichnungen Protokolle zu erstellen. 
                         Zunächst wird die Sprache in Text umgewandelt, Sprecher werden unterschieden, 
                         und anschließend generiert die KI einen Protokollvorschlag, der anpassbar ist. </p>
-                    <p>Protokollerstellung durch KI:
+                            <h2 class="kleine-unterstrichene-ueberschrift">Protokollerstellung durch KI:</h2>
+                            <ul>
+                                    <li>Aufnahme einer Besprechung hochladen</li>
+                                    <li>KI analysiert mithilfe von Tools...</li>
+                                    <li>Manuelle Anpassungen: ...</li>
+                                </ul>
+                    <h1>Anleitung zur Nutzung:</h1>
                     <ul>
-                        <li>Aufnahme einer Besprechung hochladen</li>
-                        <li>KI analysiert mithilfe von Tools wie PyAnnotate und Vosk, erkennt Sprecher und wandelt Sprache in Text um</li>
-                        <li>Ein GPT-Modell generiert basierend auf dem Transkript einen Protokollvorschlag</li>
-                        <li>Manuelle Anpassungen: Der Nutzer kann das Transkript bearbeiten und den KI-Vorschlag verfeinern</li>
-                    </ul>
-                </p>
-                    <h2 class="kleine-unterstrichene-ueberschrift">Anleitung zur Nutzung:</h2>
-                    <ul>
-                        <li>Schritt 1: Die Aufnahme, welche in Text umgewandelt und protokolliert werden soll, hochladen </li>
-                        <li>Schritt 2: Sprecher können optional benannt werden, basierend auf ausgewählten Textstellen </li>
-                        <li>Schritt 3: Der transkribierte Text kann überprüft, bearbeitet und von irrelevanten Inhalten bereinigt werden.</li>
-                        <li>Schritt 4: Die KI generiert basierend auf der bereinigten Transkription einen Protokollvorschlag, 
+                        <span class="large-symbol">&#10112;</span> Die Aufnahme, welche in Text umgewandelt und protokolliert werden soll, hochladen </li>
+                        <br><span class="large-symbol">&#10113;</span>  Sprecher können optional benannt werden, basierend auf ausgewählten Textstellen </li>
+                        <br><span class="large-symbol">&#10114;</span>  Der transkribierte Text kann überprüft, bearbeitet und von irrelevanten Inhalten bereinigt werden.</li>
+                        <br><span class="large-symbol">&#10115;</span>  Die KI generiert basierend auf der bereinigten Transkription einen Protokollvorschlag, 
                             der weiter angepasst werden kann</li>
                     </ul>
                     <h2 class="kleine-unterstrichene-ueberschrift">Speicherung und Export</h2>
@@ -178,15 +194,16 @@
                         <li>Keycloak-SSO schützt Zugänge und gewährleistet, dass nur autorisierte Personen Protokolle einsehen können.</li>
                         <li> Zugriffsbeschränkung auf Protokolle der eigenen Organisation.</li>
                     </ul>
-                    <h2 class="kleine-unterstrichene-ueberschrift">Lokale Installation:</h2>
-                    <p>Voraussetzungen:</p>
+                    <h1>Lokale Installation &#128187</h1>
+                    <p>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Voraussetzungen:</h2></p>
                     <ul>
                         <li>Docker installieren</li>
                         <li>Die folgenden repositories clonen:</li>
                         <code>https://github.com/SoftwareEngineering-WS2025-ARMMS/ProtoGen-fe.git</code>
                       <br>  <code>https://github.com/SoftwareEngineering-WS2025-ARMMS/GEN_AI_Protokoll.git</code>
                     </ul>
-                    <p>Starten des Backend-Servers mit Docker:</p>
+                    <p><h2 class="kleine-unterstrichene-ueberschrift">Starten des Backend-Servers mit Docker:</h2></p>
                     <ol>
                         <li>Stellen Sie sicher, dass Docker und Docker Compose installiert sind</li>
                         <li>Erstellen Sie die Dateien <q>CHATGPT_API</q>, <q>PYANNOTE_KEY</q>, <q>client_secrets.json</q>, 
@@ -196,40 +213,39 @@
                             ist ausreichend, um den Server im Docker-Container auszuführen.
                         </li>
                         <li>Führen Sie <q>restart_docker.sh</q> aus:
-                        </li>
-                    </ol>
-                    <p>Containerization:</p>
+                 
+                    <p><b><u>Containerization</u></b>:</p>
                     <pre><code>docker-compose build # Build the image docker-compose up -d # Start the container in detached mode</code></pre>
-                    <p>Entwicklungsserver 
+                    <p><b><u>Entwicklungsserver</u></b>:
                         <br> Um einen lokalen Entwicklungsserveng server zu starten, führen Sie Folgendes aus:
                         <pre><code>ng serve</code></pre>
                         Sobald der Server läuft, öffnen Sie Ihren Browser und navigieren Sie zu <code>http://localhost:4200/</code>. 
                         Die Anwendung lädt sich automatisch neu, wenn Sie Änderungen an den Quelldateien vornehmen.
                     </p>
-                    <p>Code scaffolding
+                    <p><b><u>Code scaffolding</u></b>:
                         <br> Die Angular CLI enthält leistungsstarke Code-Scaffolding-Tools. Um eine neue Komponente zu generieren, führen Sie aus:
                         <pre><code>ng generate component komponenten-name</code></pre>
                         Für eine vollständige Liste verfügbarer Schemas (z. B. <i>components</i>, <i>directives</i> oder <i>pipes</i>) führen Sie Folgendes aus:
-                        ng generate —help
                         <pre><code>ng generate -help</code></pre>
                     </p>
-                    <p>Build-Prozess
-                        Um das Projekt zu kompilieren, führen Sie Folgendes aus:
+                    <p><b><u>Build-Prozess</u></b>:
+                        <br>Um das Projekt zu kompilieren, führen Sie Folgendes aus:
                         <pre><code>ng build</code></pre>
                         Dies kompiliert Ihr Projekt und speichert die Build-Artefakte im <i>dist/</i>-Verzeichnis. Standardmäßig optimiert der 
                         Produktions-Build Ihre Anwendung für Leistung und Geschwindigkeit.
                     </p>
-                    <p>Unit-Tests ausführen
-                        Um Unit-Tests mit dem Karma-Test-Runner auszuführen, nutzen Sie den folgenden Befehl:
+                    <p><b><u>Unit-Tests ausführen</u></b>:
+                        <br>Um Unit-Tests mit dem Karma-Test-Runner auszuführen, nutzen Sie den folgenden Befehl:
                         <pre><code>ng test</code></pre>
                     </p>
-                    <p>End-to-End-Tests ausführen
-                        Für End-to-End-Tests (E2E) führen Sie Folgendes aus:
+                    <p><b><u>End-to-End-Tests</u></b>:
+                        <br>Für End-to-End-Tests (E2E) führen Sie Folgendes aus:
                         <pre><code>ng e2e</code></pre>
                         Die Angular CLI wird standardmäßig nicht mit einem End-to-End-Test-Framework ausgeliefert. Sie können das Framework wählen, 
                         das Ihren Anforderungen entspricht.
                     </p>
-
+                </li>
+            </ol>
 
 
                 </section>
@@ -238,7 +254,7 @@
 
                 <!-- Chatbot User Section -->
                 <section id="meta-only" class="meta-only">
-                    <h2>Chatbot</h2>
+                    <h2 id="us-chatbot">Chatbot</h2>
                     <p>Der KI-gestützte Vereins-Chatbot unterstützt Mitarbeiter dabei, schnell und effizient auf wichtige Informationen zuzugreifen. 
                         Statt zeitaufwendig Protokolle, To-Do-Listen oder andere Dokumente manuell durchzugehen, können Nutzer ihre Fragen direkt an den 
                         Chatbot richten und erhalten präzise Antworten. Das Ziel ist es, Arbeitsprozesse zu vereinfachen und die interne Kommunikation
@@ -246,10 +262,10 @@
                     <h2 class="kleine-unterstrichene-ueberschrift">Grundlegende Funktionalitäten</h2>
                     <p>Der Chatbot funktioniert in drei einfachen Schritten:
                     <ol>
-                        <li>Frage stellen: Der Nutzer gibt eine Frage oder Suchanfrage ein, z. B. “Was wurde im letzten Team-Meeting beschlossen?”</li>
-                        <li>Relevante Dokumente finden: Der Chatbot durchsucht die angebundenen Speichermedien (wie Dropbox oder andere Cloud-Dienste) 
+                        <span class="large-symbol">&#10112;</span>  Frage stellen: Der Nutzer gibt eine Frage oder Suchanfrage ein, z. B. “Was wurde im letzten Team-Meeting beschlossen?”</li>
+                        <br><span class="large-symbol">&#10113;</span>  Relevante Dokumente finden: Der Chatbot durchsucht die angebundenen Speichermedien (wie Dropbox oder andere Cloud-Dienste) 
                             nach den passenden Dateien, z. B. Protokolle, Aufgabenlisten oder Projektpläne</li>
-                        <li>Antwort generieren: Basierend auf den gefundenen Informationen erstellt der Chatbot eine prägnante Zusammenfassung, 
+                         <br><span class="large-symbol">&#10114;</span>Antwort generieren: Basierend auf den gefundenen Informationen erstellt der Chatbot eine prägnante Zusammenfassung, 
                             kann konkrete Zitate aus den Dokumenten anzeigen und beantwortet auch Rückfragen, um Details weiter zu präzisieren</li>
                     </ol>
                 </p>
@@ -269,34 +285,127 @@
                 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <!-- Developer Section Placeholder -->
                 <h1 class="main-section-title">Developer Section</h1>
                 <section id="meta-only" class="meta-only">
                 <section id="dev-placeholder-1">
                     <h2>Storage Engine</h2>
-                    <p>Inhalt für Entwickler-Platzhalter 1.</p>
+                    <p>                   
+                    <h2 class="kleine-unterstrichene-ueberschrift">Abhängigkeiten:</h2>
+                     Um den Server auszuführen, werden verschiedene Abhängigkeiten benötigt (z. B. Dropbox, Flask usw.). 
+                        Diese sind in der Datei <code>requirements.txt</code> aufgelistet und können einfach mit folgendem Befehl installiert werden:
+                        <pre><code>pip install -r requirements.txt</code></pre>
+                    </p>
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift">Dropbox:</h2>
+                     Eine Dropbox-App muss erstellt und eingerichtet werden. Dabei sind folgende Punkte zu beachten:
+                        <ol>
+                            <li>Wählen Sie die Scoped Access API mit vollem Zugriff auf Dropbox während der Erstellung der Anwendung.</li>
+                            <li>Aktivieren Sie unter Einstellungen → Entwicklung zusätzliche Benutzer.</li>
+                            <li>Redirect-URIs müssen manuell im Abschnitt OAuth2 unter den Einstellungen hinzugefügt werden, auch für lokale Weiterleitungen. 
+                                Diese URIs müssen mit https:// beginnen (obwohl <code>http://</code> für localhost erlaubt ist).</li>
+                            <li>Die Berechtigungen müssen korrekt gesetzt werden:</li>
+                            <ul>
+                                <li><code>files.content.read</code></li>
+                                <li><code>files.content.write</code></li>
+                                <li><code>files.metadata.read</code></li>
+                                <li><code>files.metadata.write</code></li>
+                            </ul>
+                            müssen aktiviert sein.
+                        </ol>
+                    </p>
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift">Umgebungsvariablen:</h2>
+                        Erstellen Sie eine .env-Datei im Stammverzeichnis und definieren Sie darin die folgenden Variablen:
+                        <pre class="json-code">
+                                DROPBOX_APP_KEY=
+                                DROPBOX_APP_SECRET=
+                                ARMMS_SECRET=
+                                DROPBOX_REDIRECT_URI=
+                                CALLBACK_REDIRECT_URI=
+                                KEYCLOAK_JWKS_URL=
+                                </pre>
+                        <ul>
+                            <li><code>DROPBOX_APP_KEY</code> und <code>DROPBOX_APP_SECRET</code> werden verwendet, um die erstellte Dropbox-App mit dem Server zu verbinden. 
+                                Sie finden diese Werte im Abschnitt “App key” und “App secret” in den App-Einstellungen.</li>
+                            <li><code>ARMMS_SECRET</code> ist ein Organisations-Schlüssel, der zum Signieren der JWT-Token verwendet wird.</li>
+                            <li><code>DROPBOX_REDIRECT_URI</code> wird von Dropbox nach der Anmeldung verwendet. Dies sollte der /dropbox_callback-Endpunkt sein und muss 
+                                in den Dropbox-App-Einstellungen registriert werden (siehe Schritt 3 im vorherigen Abschnitt).</li>
+                            <li><code>CALLBACK_REDIRECT_URI</code> wird verwendet, um den Benutzer nach erfolgreicher Anmeldung weiterzuleiten.</li>
+                            <li><code>KEYCLOAK_JWKS_URL</code> wird benötigt, um das Keycloak-Zertifikat für die Validierung der JWT-Token bereitzustellen.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift"> Keycloak-Konfiguration:</h2>
+                    Für den Betrieb des Servers wird eine Keycloak-Konfiguration benötigt. Diese wird in der Datei keycloak_config.json im Stammverzeichnis gespeichert. 
+                    Die JSON-Datei enthält die folgenden Attribute:
+                    <pre class="json-code">
+                        {
+                             "web": {
+                                  "issuer": "ISSUER_URI",
+                                  "auth_uri": "AUTH_URI",
+                                  "client_id": "CLIENT_ID",
+                                  "client_secret": "CLIENT_SECRET",
+                                  "token_uri": "TOKEN_URI",
+                                  "redirect_uris": ["REDIRECT_URI"],
+                                  "userinfo_uri": "USER_INFO_URI",
+                                  "logout_uri": "LOGOUT_URI"
+                                }
+                            }
+                    </pre>
+                </p>
+                <p>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Server starten:</h2>
+                    Sobald alle Schritte abgeschlossen sind, können Sie den Server mithilfe von Docker und der bereitgestellten Dockerfile starten.
+                </p>
                 </section>
               </section>
 
+
+
+
+
+
+
+
+
+
+
+
               <section id="meta-only" class="meta-only">
                 <section id="dev-placeholder-2">
-                    <h2>Keycloak</h2>
-                    <p>Inhalt für Entwickler-Platzhalter 2.</p>
+                    <h2 id="ds-keycloak">Keycloak</h2>
+                    <p><b>Docker Compose: Keycloak und PostgreSQL</b>
+                        <br> Diese Konfiguration definiert eine Docker-basierte Bereitstellung zur Ausführung von Keycloak, einem Identitäts- und Zugriffsverwaltungssystem, 
+                        mit einer PostgreSQL-Datenbank als persistenter Speicher.
+                        <h2 class="kleine-unterstrichene-ueberschrift">Wichtige Punkte</h2>                        <ul>
+                            <li>Dienste:</li>
+                            <ul>
+                                <li><code>armms-keycloak</code>: Hoster für Keycloak</li>
+                                <li><code>keycloakdb</code>: Stellt die Datenbank für Keycloak bereit</li>
+                            </ul>
+                            <li>Konfiguration:</li>
+                            <ul>
+                                <li>Geheimnisse und Einstellungen werden als Umgebungsvariablen übergeben, die lokal in der Bereitstellungsumgebung festgelegt sind</li>
+                            </ul>
+                            <li>Netzwerk:</li>
+                            <ul>
+                                <li>Beide Dienste kommunizieren über ein privates Docker-Bridge-Netzwerk</li>
+                            </ul>
+                        </ul>
+                    </p>
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift">Verwendung</h2>                    
+                        <ol>
+                            <li>Legen Sie die erforderlichen Umgebungsvariablen fest (z. B. Datenbank-Zugangsdaten, Keycloak-Admin-Daten) in der Bereitstellungsumgebung
+                                In diesem Beispiel ist der KC_HOSTNAME:
+                                <code>https://keycloak-armms.rayenmanai.site</code>, wo Keycloak bereitgestellt wird</li>
+                                <li>Starten Sie die Dienste mit folgendem Befehl:
+                                    <pre><code>docker-compose up -d</code></pre>
+                                </li>
+                                <li>Greifen Sie über den konfigurierten Hostnamen und Port auf Keycloak zu</li>
+                        </ol>
+                    </p>
 
 
 
@@ -311,31 +420,33 @@
                 <section id="dev-placeholder-3">
                     <h2>ProtoGen: GEN_AI_Protokoll</h2>
                     <p>Um den Server auszuführen, müssen einige Pakete installiert werden (empfohlen wird die Verwendung von Python venv oder Conda).</p>
-                    <p>Pyannote</p>
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift">Pyannote</h2>                    
+                        </p>
                     <ol>
                         <li>Installiere Pyannote.audio</li>
                         <pre><code>pip install pyannote.audio</code></pre>
                         <li>HuggingFace</li>
                         <ol>
-                            <li>Registriere dich oder melde dich an bei <a href>https://huggingface.co</a> TODO Link anpassen</li>
-                            <li>Akzeptiere <a href>https://huggingface.co/pyannote/segmentation-3.0</a> TODO Link anpassen</li>
-                            <li>Akzeptiere <a href>https://huggingface.co/pyannote/segmentation-3.1</a> TODO Link anpassen</li>
-                            <li>Erstelle einen Zugangstoken auf <a href>https://huggingface.co/login?next=%2Fsettings%2Ftokens</a> TODO Link anpassen</li>
+                            <li>Registriere dich oder melde dich an bei <a href="https://huggingface.co" target="_blank">HuggingFace</a> </li>
+                            <li>Akzeptiere <a href="https://huggingface.co/pyannote/segmentation-3.0" target="_blank">die Bedingungen</a> </li>
+                            <li>Akzeptiere <a href="https://huggingface.co/pyannote/segmentation-3.1" target="_blank">die weiteren Nutzerbedingungen</a></li>
+                            <li>Erstelle einen Zugangstoken auf <a href="https://huggingface.co/login?next=%2Fsettings%2Ftokens" target="_blank">HuggingFace</a></li>
                             <li>Kopiere den Zugangstoken an einen sicheren Ort, sodass er nicht öffentlich zugänglich ist. 
                                 <br>(Bei der Nutzung von venv empfehlen wir, ihn in eine Datei <q>.venv/PYANNOTE_KEY</q> zu speichern).</li>
                         </ol>
                         Hinweis: Wenn du einen anderen Speicherort wählst, vergiss nicht, den Pfad "__key_path__" in der Datei src/utils/Annotation.py entsprechend anzupassen.
                     </ol>
-                    <p>OpenAI-Schlüssel
-                        <br> Da für den Moment die OpenAI-API verwendet wird, benötigst du einen OpenAI-Zugangstoken, der an einem sicheren Ort gespeichert wird. 
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift">OpenAI-Schlüssel</h2>                    
+                        Da für den Moment die OpenAI-API verwendet wird, benötigst du einen OpenAI-Zugangstoken, der an einem sicheren Ort gespeichert wird. 
                         <br> (Bei der Verwendung von venv empfehlen wir, ihn in eine Datei '.venv/CHATGPT_API' zu speichern).
                        <br> Hinweis: Falls du einen anderen Speicherort wählst, vergiss nicht, den Pfad "__key_path__" in der Datei src/utils/OpenAIClient.py zu aktualisieren.
                     </p>
-                    <p>Datenbank-Konfiguration
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift">Datenbank-Konfiguration</h2>                    
                         Um den Datenbank-Container auszuführen, erstelle eine Datei database_metadata.json im .venv-Ordner. 
                         <br>Diese JSON-Datei sollte die folgenden Attribute enthalten:
-
-                        <h1>Beispiel JSON-Code in einem angepassten Feld</h1>
 
                         <!-- Code-Feld -->
                         <pre class="json-code">
@@ -350,7 +461,6 @@
                     </p>
                     <p>Keycloak-Konfiguration
                     Um den Server auszuführen, wird eine Keycloak-Konfiguration benötigt. Diese wird in der Datei client_secrets.json im Ordner .venv gespeichert.
-                    <br> Die JSON-Datei enthält die folgenden Attribute:
                     <h1>Beispiel JSON-Code in einem angepassten Feld</h1>
 
                     <!-- Code-Feld -->
@@ -367,10 +477,11 @@
                             }
                           }
                     </pre>
-                    Weitere Informationen zu <a href>https://www.keycloak.org</a> und <a href>https://flask-oidc.readthedocs.io/en/latest/ </a> TODO Link anpassen
+                    Weitere Informationen zu <a href="https://www.keycloak.org"  target="_blank">KeyCloak</a> und <a href="https://flask-oidc.readthedocs.io/en/latest/"  target="_blank">Flask</a>
                 </p>
 
-                <p>Server lokal ausführen
+                <p>
+                    <h2 class="kleine-unterstrichene-ueberschrift">Server lokal ausführen</h2>                    
                     Wenn du den Server lokal ausführen möchtest:
                     <ol>
                         <li>Erstelle eine Python-virtuelle Umgebung und installiere die benötigten Pakete</li>
@@ -407,16 +518,92 @@
                 <section id="meta-only" class="meta-only">
                 <section id="dev-placeholder-3">
                     <h2>Chatbot</h2>
-                    <p>Inhalt für Entwickler-Platzhalter 4.</p>
+                    <p>Chatbot, der Dokumente aus Ihrer Organisation herunterlädt, einbettet und abfragt</p>
+                    <p>
+                        <h1>Wie es funktioniert:</h1>
+                        <img src="images/DS.documentation.jpeg" alt="Dokumentationsbild" width="750">
+                        <br>Der Chatbot funktioniert, indem er Benutzeranfragen von der Open-WebUI-Frontend-Oberfläche erhält, die neuesten Dokumente aus deiner Speicher-Engine herunterlädt, sie in Weaviate einbettet, um relevante Antworten zu finden, und ein Generator-Modell (hier OpenAI) verwendet, um eine Antwort zu formulieren!                   
+                    </p>
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift">Verzeichnisstruktur</h2>                    
+                        Das Verzeichnis <code>/src</code> enthält zwei Ordner: <ocde>open-webui</ocde> und <code>webui_pipeline</code>.
+                        <ul>
+                            <li><code>open-webui</code>  ist die Benutzeroberfläche, mit der du mit dem Chatbot kommunizieren kannst</li>
+                            <li>Der eigentliche Chatbot ist als Open-WebUI-Pipeline implementiert und befindet sich im Ordner  <code>webui_pipeline</code></li>
+                        </ul> 
+                       
+                        <h2 class="kleine-unterstrichene-ueberschrift"> Hinweis:</h2>                    
+                        <!-- Glühbirne Emoji -->
+                        &#128161;  <code>open-webui</code> ist als Git-Submodul enthalten. Informationen dazu, wie man es klont und herunterlädt, findest du im nächsten Abschnitt.
+                    </p>
+                    <p>
+                        <h2 class="kleine-unterstrichene-ueberschrift">Installation und Ausführung:</h2>  
+                        Für eine vereinfachte Einrichtung mit Docker:
+                        <ol>
+                            <li>Repository clonen: <pre><code>git clone --recurse-submodules git@github.com:SoftwareEngineering-WS2025-ARMMS/chatbot.git</code></pre></li>
+                            <li>Umgebungsvariablen konfigurieren: <br>Damit der Chatbot korrekt mit den anderen Plattformkomponenten verbunden ist, müssen Open-WebUI und der Chatbot konfiguriert werden. Befolge diese Schritte:
+                    </p>
+                    <p>In der Datei ./compose-openwebui anpassen:
+                        <br> Ändere die folgenden Vatiablen:
+                        <ul>
+                            <li><code>WEBUI_URL=${WEBUI_URL}</code>: Wo Open-WebUI gehostet wird.</li>
+                            <li><code>WEBUI_SECRET_KEY=${WEBUI_SECRET_KEY}</code>: Geheimschlüssel konfigurieren.</li>
+                            <li><code>OAUTH_CLIENT_ID=${OAUTH_CLIENT_ID}</code>: Keycloak-Client-ID.</li>
+                            <li><code>OAUTH_CLIENT_SECRET=${OAUTH_CLIENT_SECRET}</code>: Keycloak-Client-Geheimschlüssel.</li>
+                            <li><code>OPENID_PROVIDER_URL=${OPENID_PROVIDER_URL}</code>: OpenID-Provider-URL</li>
+                        </ul>
+                    </p>
+                    <p> <b>Chatbot-Konfiguration:</b>
+                        <br> Erstelle die Datei <code>./src/webui_pipeline/pipelines/.env</code> und konfiguriere die folgenden Variablen:
+                        <pre class="json-code">
+                            OPENAI_KEY=<OPENAI_KEY>
+                            STORAGE_SERVER=<STORAGE_SERVER>
+                            ARMMS_SECRET=<ARMMS_SECRET>
+                            WEAVIATE_PORT=<WEAVIATE_PORT>
+                            CACHE_EXPIRY_SECONDS=<CACHE_EXPIRY_SECONDS>
+                            </pre>
+                            <ul>
+                                <li><code>OPENAI_KEY</code>: Dein API-Schlüssel, der von OpenAI bereitgestellt wird.</li>
+                                <li><code>STORAGE_SERVER</code>: Der Speicher-Server (z. B. dein file-dashboard-backend).</li>
+                                <li><code>ARMMS_SECRET</code>: Ein Organisations-Schlüssel zum Signieren von JWT-Tokens (sollte denselben Wert haben wie der vom Speicher-Engine bereitgestellte Schlüssel).</li>
+                                <li><code>WEAVIATE_PORT</code>: Der Port, auf dem Weaviate lokal gehostet wird (Standard: 8989).</li>
+                                <li><code>CACHE_EXPIRY_SECONDS</code>: Dauer in Sekunden, wie lange ein Dokument maximal im Cache gehalten wird.</li>
+                            </ul>
+                    </p>
+                    <p><b>Open-WebUI:</b>
+                        <pre><code>docker run -d -p 9099:9099 --add-host=host.docker.internal:host-gateway -v pipelines:/app/pipelines --name pipelines --restart always ghcr.io/open-webui/pipelines:main</code></pre>
+                        <pre><code>docker run -d -p 9099:9099 --add-host=host.docker.internal:host-gateway -v pipelines:/app/pipelines --name pipelines --restart always ghcr.io/open-webui/pipelines:main</code></pre>
+                    </p>
+                </li>
+                <li> Container bereitstellen:
+                    <br> Führe die folgenden Befehle aus, um Weaviate, Open-WebUI und unsere Pipeline bereitzustellen:
+                    <p>Weaviate starten:
+                        <pre><code>docker compose -f compose-weaviate.yaml up -d</code></pre>
+                        Open-WebUI starten:
+                        <pre><code>docker compose -f compose-openwebui.yaml up -d</code></pre>
+                        Pipeline starten:
+                        <pre><code>docker build -t armms-pipeline ./src/webui_pipeline && docker run -d--name armms-pipeline --network=host armms-pipeline</code></pre>
+                    </p>
+                </li>
+                <li>Pipeline in Open-WebUI hinzufügen:
+                <ul>
+                    <li>Stelle die API-URL auf <code>http://host.docker.internal:9099</code> und den API-Schlüssel auf <code>0p3n-w3bu!</code>.
+                    <br> Deine Pipelines sollten jetzt aktiv sein. </li>
+                </li>
+                </ul>
+                <li>Konfiguration verwalten:
+                    <ul>
+                    <li>Gehe im Admin-Panel zu Admin Settings > Pipelines.</li>
+                    <li>Wähle deine gewünschte Pipeline aus und passe die Werte direkt im WebUI an.</li>
+                </ul>
+                </li>
+            </ol>
+
                 </section>
             </section>
 
-                <section id="meta-only" class="meta-only">
-                <section id="dev-placeholder-3">
-                    <h2>Eigene PlugIns schreiben</h2>
-                    <p>Inhalt für Entwickler-Platzhalter 5.</p>
-                </section>
-            </section>
+
+
 
 
 

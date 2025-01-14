@@ -7,25 +7,30 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .sidebar {
-    width: 250px;
-    background-color: #2d2f39; /* Dunkler Sidebar-Hintergrund */
-    padding: 20px;
-    height: 100vh;
-    position: sticky;
+    width: auto; /* Automatische Breite, basierend auf dem Inhalt */
+    max-width: 200px; /* Maximalbreite, falls gewünscht */
+    background-color: #2d2f39;
+    padding: 10px; /* Etwas weniger Padding */
+    position: fixed;
     top: 0;
+    bottom: 0;
     overflow-y: auto;
+    z-index: 10;
 }
 
 .sidebar h3 {
+    font-size: 1.2rem; /* Kleinere Schriftgröße */
     color: #00ffb8;
-    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
 .sidebar ul {
-    list-style: none;
     padding: 0;
 }
 
@@ -92,8 +97,9 @@ body {
 }
 
 .content {
-    flex-grow: 1;
-    padding: 40px 20px;
+    margin-left: 200px; /* Weniger Abstand zur Sidebar */
+    padding: 20px;
+    overflow-y: auto; /* Inhalt scrollt bei langen Dokumenten */
 }
 
 header {
@@ -208,3 +214,39 @@ pre.custom-code code span:nth-child(odd) {
     background-color: transparent;  /* keine Farbe für ungerade Zeilen */
 }
 
+
+/* Für kleinere Bildschirme */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content {
+        margin-left: 220px;
+    }
+}
+
+.indent-paragraph ul {
+    padding-left: 5px; /* Minimale Einrückung */
+    margin-left: 0;     /* Keine zusätzliche Einrückung */
+    list-style-position: inside; /* Punkte bleiben am Textanfang */
+}
+
+.indent-paragraph > p {
+    margin-left: 5px;   /* Dezente Einrückung */
+    text-indent: 8px;  /* Leichtes Einrücken nur der ersten Zeile */
+}
+
+a {
+    color: #00ffb8;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: rgb(61, 202, 207);
+  }
+
+  .large-symbol {
+    font-size: 27px;  /* Größe des Symbols */
+    color: #00ffb8;
+  }
